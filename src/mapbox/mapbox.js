@@ -39,8 +39,8 @@ const propTypes = {
   visible: PropTypes.bool, /** Whether the map is visible */
 
   // Map view state
-  width: PropTypes.number, /** The width of the map. */
-  height: PropTypes.number, /** The height of the map. */
+  width: PropTypes.oneOf([PropTypes.number, PropTypes.string]), /** The width of the map. */
+  height: PropTypes.oneOf([PropTypes.number, PropTypes.string]), /** The height of the map. */
 
   viewState: PropTypes.object, /** object containing lng/lat/zoom/bearing/pitch */
 
